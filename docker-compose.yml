@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  jenkins:
+    build:
+      context: .
+    volumes:
+      - .:/var/jenkins_home/workflow-libs
+    ports:
+      - "8080:8080"
